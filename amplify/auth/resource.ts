@@ -3,11 +3,11 @@ import { defineAuth } from '@aws-amplify/backend';
 export const auth = defineAuth({
   loginWith: {
     email: true,
-    phone: true,
+    phone: undefined,
   },
   userAttributes: {
     phoneNumber: {
-        required: false,
+        required: true,
         mutable: true,
     },
     email: {
