@@ -12,7 +12,7 @@ Amplify.configure(outputs);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Authenticator>
+    <Authenticator socialProviders={['google']}>
       <App />
     </Authenticator>
   </React.StrictMode>
